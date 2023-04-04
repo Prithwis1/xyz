@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-image: url(../download.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: -25px;
+}
+
+ul li{
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(205, 25, 25);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-weight: 900;
+}
+
+ul li a:hover{ 
+    background-color:rgb(9, 88, 140);
+    color: rgb(50, 208, 232);
+
+} 
+ul li.active a{
+    background-color:rgb(7, 81, 123);
+    color: rgb(235, 231, 231);
+}
+.logo img{
+    float: left;
+    width: 60px;
+    height:auto;
+    margin-top: 25px;
+}
+.logo h1{
+    color: white;
+    font-size: 30px;
+    font-family:Poppins;
+    position: relative;
+    padding-top: 50px;
+    
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%,-30%);
+}
+.title h1{
+    color:black;
+    font-size: 40px;
+}
+.title h3{
+    color:gray;
+    font-size: 20px;
+}
+.button{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-30%,-30%);
+}
+.btn{
+    border: 1px solid rgb(19, 20, 20);
+    padding: 10px 30px;
+    color: rgb(11, 9, 9);
+    text-decoration: noneS;
+    transition: 0.6s ease;
+
+}
+.btn:hover{
+    background-color:rgb(232, 235, 238);
+    color: rgb(15, 16, 15);
+    
+}
+.right {
+    /* border: 2px solid black; */
+    height: 57vh;
+    width: 100vw;
+    float: left;
+    position: absolute;
+    padding-left: 750px;
+}
+.right img{
+    position: relative;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 140px;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 50px;
+    }
+}
+.f1_2{
+    position: relative;
+    margin-top: 145px;
+    width: 100%;
+    height: 22vh;
+    overflow: hidden;
+    background-color: black;
+}
+.f1_2 .wave {
+    /* top: -500px; */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(dd.jpg);
+    background-size: 1000px 100px;
+    background-color: rgb(146, 82, 5);
+    /* z-index: 1000; */
+}
